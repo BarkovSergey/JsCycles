@@ -98,11 +98,14 @@ const bigNumberFor  = (d,e) => {
 
 const twoNumber = (n,m) => {
     let currentNumber = 1;
-            while (currentNumber <= n){
-                console.log(currentNumber);
-                currentNumber++;
+    while (currentNumber <= n) {
+        console.log(currentNumber);
+        if ((currentNumber * m) % 2 !== 0) {
+        console.log(currentNumber * m);
         }
+        currentNumber++;
     }
+}
 const twoNumberDo = (n,m) => {
     let currentNumber = 1;
            do {
@@ -125,7 +128,7 @@ const twoNumberFor  = (n,m) => {
 }
 //smallNumberFor(13,3);
 //bigNumberDo(10,4);
-twoNumber(7,3);
+twoNumberDo(7,3);
 
 
 
