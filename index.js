@@ -108,14 +108,13 @@ const twoNumber = (n,m) => {
 }
 const twoNumberDo = (n,m) => {
     let currentNumber = 1;
-           do {
-               if ((currentNumber * m) % 2 !== 0){
-                   console.log(currentNumber * m);{
-                       console.log(currentNumber);
-                   }
-                   currentNumber++;
-               }
-           } while (currentNumber <= n);
+    do  {
+        console.log(currentNumber);
+        if ((currentNumber * m) % 2 !== 0) {
+            console.log(currentNumber * m);
+        }
+        currentNumber++;
+    } while (currentNumber <= n);
 
 }
 const twoNumberFor  = (n,m) => {
@@ -126,9 +125,11 @@ const twoNumberFor  = (n,m) => {
             }
         }
 }
-//smallNumberFor(13,3);
-//bigNumberDo(10,4);
-twoNumberDo(7,3);
+
+checkNumber(5);
+smallNumberFor(13,3);
+bigNumberDo(10,4);
+twoNumber(7,3);
 
 
 
