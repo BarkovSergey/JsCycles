@@ -99,43 +99,33 @@ const bigNumberFor  = (d,e) => {
 const twoNumber = (n,m) => {
     let currentNumber = 1;
             while (currentNumber <= n){
-                console.log(currentNumber * m);
+                console.log(currentNumber);
                 currentNumber++;
         }
     }
-const twoNumberDo = (d,e) => {
+const twoNumberDo = (n,m) => {
     let currentNumber = 1;
-    if (d > e){
-        do {
-            if (currentNumber % 2 === 0){
-                console.log(currentNumber);
-            }
-            currentNumber++;
-        } while (currentNumber <= d);
+           do {
+               if ((currentNumber * m) % 2 !== 0){
+                   console.log(currentNumber * m);{
+                       console.log(currentNumber);
+                   }
+                   currentNumber++;
+               }
+           } while (currentNumber <= n);
 
-    } else {
-        do  {
-            if (currentNumber % 2 === 0) {
-                console.log(currentNumber);
-            }
-            currentNumber++;
-        } while (currentNumber <= e);
-    }
 }
 const twoNumberFor  = (n,m) => {
-    if ((n % 2) && (m % 2)) {
         for (let currentNumber = 1; currentNumber <= n; currentNumber++) {
-            console.log(currentNumber * m);
+            console.log(currentNumber);
+            if ((currentNumber * m) % 2 !== 0){
+                console.log(currentNumber * m);
+            }
         }
-    } else {
-        for (let currentNumber = 1; currentNumber <= n; currentNumber++) {
-            console.log(currentNumber );
-        }
-    }
 }
 //smallNumberFor(13,3);
 //bigNumberDo(10,4);
-twoNumberFor(5,2);
+twoNumber(7,3);
 
 
 
